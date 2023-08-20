@@ -10,12 +10,6 @@
 [] edit readme
 
 ## Build a release
-In your terminal, commit the workflow.
-````bash
-$ git add .github/workflows/release.yml
-$ git commit -m "Add release workflow"
-$ git push origin main
-````
 Create a tag that matches the version in the ``manifest.json`` file.
 
 ````bash
