@@ -16,7 +16,7 @@ $ git add .github/workflows/release.yml
 $ git commit -m "Add release workflow"
 $ git push origin main
 ````
-Create a tag that matches the version in the ``manifest.json`` file. \
+Create a tag that matches the version in the ``manifest.json`` file.
 
 ````bash
 $ git tag -a 1.0.1 -m "1.0.1"
