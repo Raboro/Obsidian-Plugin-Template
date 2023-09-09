@@ -1,7 +1,13 @@
 import { readFileSync, writeFileSync } from "fs";
 import { execSync } from "child_process";
 
-const highestTag = execSync("git describe --tags --abbrev=0").toString().trim();
+let highestTag;
+try {
+    highestTag = execSync("git describe --tags --abbrev=0").toString().trim();
+} catch (error) {
+    console.log('This is the first release, no tags are present.')
+    highestTag = "1.0.0";
+}
 
 const incrementVersion = (version) => {
     const [major, minor, patch] = version.split(".").map(Number);
