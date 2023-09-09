@@ -14,3 +14,20 @@ Just time the following into the terminal:
 ````bash
 $ make release
 ````
+
+---
+
+# README:
+
+# Repo Name
+
+<Plugin short description>
+demo image
+
+## Using
+text
+## Commands 
+text & commands image
+
+## Settings
+text & settings image
